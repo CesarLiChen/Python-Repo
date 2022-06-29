@@ -22,5 +22,11 @@ for guesses in range (1, 7):
         # When the guess is correct.
         break
 
-print("You took " + str(guesses) + " guesses.")
+
+if guess == secret_number:
+    print(f"Good job {name}! You guessed my number in {str(guesses)} guesses")
+else:
+    print(f"Nope. The number I was thinking of was {str(secret_number)}.")
+
+# print("You took " + str(guesses) + " guesses.")
 
