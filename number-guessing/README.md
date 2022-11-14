@@ -4,4 +4,4 @@ This little program is being used to get myself familiar with Git and Github aga
 
 Used some input validation, implement guess ranges.
 
-Might let users chose the range where they'll like the random number to come from, as well as how many guesses they'll like. 
+Might DO: Might let users chose the range where they'll like the random number to come from, as well as how many guesses they'll like. 
