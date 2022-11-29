@@ -3,11 +3,11 @@
 # .sort function, conditionals, loops
 
 numbers = input("Please enter 5 numbers separated by spaces")
-
 num_list = numbers.split(" ")
 print("Full list " + str(num_list))
+
 # Find max, and min of the list
-#then delete them from the list
+# then delete them from the list
 last = max(num_list)
 first = min(num_list)
 num_list.remove(last)
