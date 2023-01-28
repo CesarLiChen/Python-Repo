@@ -5,6 +5,11 @@
 in_num = int(input("Please enter a number"))
 
 n = 1
+# while n < 100:
+#     print(in_num * n)
+#     n += 1
+
 while n < 100:
-    print(in_num * n)
+    if n % in_num == 0:
+        print(n)
     n += 1
