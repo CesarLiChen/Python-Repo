@@ -14,7 +14,7 @@ count_dict = {}
 for character in sentence.upper():
 
     """if char does not exist set 0 as value, if it exists
-    nothing happens."""
+    then increment count by one."""
     count_dict.setdefault(character, 0) 
     count_dict[character] += 1
 
