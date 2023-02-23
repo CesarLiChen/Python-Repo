@@ -3,7 +3,9 @@
 # output: 4 numbers repeated (2, 2, 5, 5)
 # Numbers WILL only be from 1 to 10.
 # Without using conditionals, loops.
+
 # FAIL, not possible without conditionals or loops.
+# I can't seem to get it for the required output.
 
 print("Please enter 10 numbers from 1 to 10")
 
