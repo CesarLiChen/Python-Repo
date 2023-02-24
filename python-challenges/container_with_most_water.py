@@ -15,6 +15,8 @@
 
 in_list = [1, 8, 6, 2, 5, 4, 8, 3, 7]
 
+# Naive solution, checks everything.
+# Really slow.
 def max_water_container(height: list[int]) -> int:
     max_water = 0
 
