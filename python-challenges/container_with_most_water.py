@@ -22,7 +22,7 @@ def max_water_container(height: list[int]) -> int:
 
     for i in range(len(in_list)):
         for j in range(i+1, len(in_list)):
-            water = min(height[i], height[j]) * abs(i - j)
+            water = min(height[i], height[j]) * (j - i)
             if water > max_water:
                 max_water = water
     return max_water
