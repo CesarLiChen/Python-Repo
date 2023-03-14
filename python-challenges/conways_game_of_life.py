@@ -12,8 +12,8 @@ Conway's Game of Life rules:
 ON_STATE = "O"
 OFF_STATE = " "
 
-columns = 10
-rows = 10
+columns = 5
+rows = 3
 
 # Creates 2d List, and fills it with random states
 game_board_list = [[ON_STATE if random.randint(0, 1) == 0 else OFF_STATE for i in range(columns)] for j in range(rows)]
@@ -53,7 +53,7 @@ while cycles < 20:
                 on_neighbours += 1 if game_board_list[r_index][rc] == ON_STATE else 0
 
             # Uncomment below line for debugging.
-            # print(f"[{r_index}][{c_index}] has: {on_neighbours} ON neighbours")
+            print(f"[{r_index}][{c_index}] has: {on_neighbours} ON neighbours")
 
             curr_cell = game_board_list[r_index][c_index]
             if curr_cell == ON_STATE:
