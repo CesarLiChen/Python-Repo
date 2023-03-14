@@ -12,17 +12,16 @@ columns = 5
 rows = 3
 
 # Creates 2d List populated with "hi"s
-game_board_list = [["hi" for i in range(columns)] for j in range(rows)]
+game_board_list = [[ON_STATE if random.randint(0, 1) == 0 else OFF_STATE for i in range(columns)] for j in range(rows)]
 
 for row in game_board_list:
     for cell in row:
-        cell = ON_STATE if random.randint(0, 1) == 0 else OFF_STATE
         print(cell, end=" ")
     print()
 
-on_neighbours = 0
 for r_index in range(rows):
     for c_index in range(columns):
+        on_neighbours = 0
         ur = r_index - 1 # ur -> up row
         dr = r_index + 1
         lc = c_index - 1 # left column
@@ -32,4 +31,3 @@ for r_index in range(rows):
             on_neighbours += 1 if game_board_list[ur][lc] == ON_STATE else 0
 
         print(f"[{r_index}][{c_index}] U-L neighbor's state is: {on_neighbours}")
-        print(game_board_list[ur][lc])
