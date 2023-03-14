@@ -53,7 +53,7 @@ while cycles < 20:
                 on_neighbours += 1 if game_board_list[r_index][rc] == ON_STATE else 0
 
             # Uncomment below line for debugging.
-            print(f"[{r_index}][{c_index}] has: {on_neighbours} ON neighbours")
+            # print(f"[{r_index}][{c_index}] has: {on_neighbours} ON neighbours")
 
             curr_cell = game_board_list[r_index][c_index]
             if curr_cell == ON_STATE:

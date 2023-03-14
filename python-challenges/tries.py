@@ -10,5 +10,9 @@ for r in multi_list:
         print(c, end=" ")
     print("")
 
+on_neighbours = 5
+on_neighbours += 1 if False else 5
+print(on_neighbours)
+
 
 
