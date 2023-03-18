@@ -14,5 +14,6 @@ on_neighbours = 5
 on_neighbours += 1 if False else 5
 print(on_neighbours)
 
-
+list2 = [2, 3, 5, 6, 7, 8]
+print(list2[-1])
 
