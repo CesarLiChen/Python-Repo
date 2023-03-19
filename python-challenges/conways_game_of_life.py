@@ -12,14 +12,14 @@ Conway's Game of Life rules:
 ON_STATE = "O"
 OFF_STATE = " "
 
-columns = 5
-rows = 3
+columns = 30
+rows = 10
 
 # Creates 2d List, and fills it with random states
 game_board_list = [[ON_STATE if random.randint(0, 1) == 0 else OFF_STATE for i in range(columns)] for j in range(rows)]
 
 cycles = 0
-while cycles < 20:
+while cycles < 100:
     for row in game_board_list:
         for cell in row:
             print(cell, end="")
